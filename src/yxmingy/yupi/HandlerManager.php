@@ -2,7 +2,6 @@
 namespace yxmingy\yupi;
 /* 把数据发给相应Handler */
 
-use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\network\mcpe\protocol\ModalFormResponsePacket;

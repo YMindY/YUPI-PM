@@ -15,7 +15,7 @@ class MultiOption extends UIBase{
   */
   private $buttons = [];
   
-  public __construct(string $title)
+  public function __construct(string $title)
   {
     parent::_construct("form",$title);
     $this->data["content"] = "";

@@ -4,7 +4,7 @@ namespace yxmingy\yupi;
 use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketReceiveEvent;
-use pocketmine\network\protocol\ModalFormResponsePacket;
+use pocketmine\network\mcpe\protocol\ModalFormResponsePacket;
 
 
 abstract class ResponserBase implements Listener{

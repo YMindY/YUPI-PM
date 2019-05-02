@@ -6,7 +6,7 @@ use pocketmine\network\mcpe\protocol\ModalFormRequestPacket;
 use pocketmine\Player;
 
 class UISender {
-  public static function sendUI:void(int $formid, array $formdata,Player $player)
+    public static function sendUI(int $formid, array $formdata,Player $player):void
   {
     $ui = new ModalFormRequestPacket();
     $ui->formId = $formid;

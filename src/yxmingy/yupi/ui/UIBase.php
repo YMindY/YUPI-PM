@@ -2,7 +2,8 @@
 namespace yxmingy\yupi\ui;
 
 use pocketmine\Player;
-use yxmingy/yupi\HandlerManager;
+use yxmingy\yupi\
+{HandlerBase,HandlerManager,UISender,Utils};
 
 abstract class UIBase {
   /*[
@@ -13,7 +14,7 @@ abstract class UIBase {
   */
   protected $data = [];
   
-  public __construct(string $type,string $title)
+  public function __construct(string $type,string $title)
   {
     $this->data["type"] = $type;
     $this->data["title"] = $title;
