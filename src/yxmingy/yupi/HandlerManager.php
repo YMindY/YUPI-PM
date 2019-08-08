@@ -20,7 +20,7 @@ class HandlerManager implements Listener{
     $ui = $event->getPacket();
     $data = trim($ui->data);
     if(isset(self::$handlers[$ui->formId])){
-      self::$handlers[$ui.formId]->handle($data,$player);
+      self::$handlers[$ui.formId]($data,$player);
       unset(self::$handlers[$ui.formId]);
     }
   }

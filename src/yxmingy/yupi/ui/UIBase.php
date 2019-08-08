@@ -29,9 +29,10 @@ abstract class UIBase {
     );
   }
   
-  public function setHandler(HandlerBase $handler):void
+  public function setHandler(callable $handler):UIBase
   {
     $id = Utils::buildId($this->data["title"]);
     HandlerManager::addHandler($id,$handler);
+    return $this;
   }
 }

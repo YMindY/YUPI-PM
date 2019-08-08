@@ -5,14 +5,7 @@ use pocketmine\plugin\PluginBase;
 
 class Utils extends PluginBase{
 	public static function buildId(string $data):int{
-	  $progress = 1;
-	  $id = 0;
-	  $cdatas = str_split($data);
-	  foreach($cdatas as $cdata){
-	    $id += ((int)($cdata))*$progress;
-	    $progress *= 10;
-	  }
-	  return $id;
+	  return intval(substr(md5($data)),0,7));
 	}
 	public function onEnable():void {
 		$this->getLogger()->notice("YUPI is Enabled! Author: xMing.");
